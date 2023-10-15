@@ -42,7 +42,7 @@ const HandleOpenAPICall = async (inputValue) => {
       );
     });
   return da;
-}; 
+};
 
 
 
@@ -60,19 +60,18 @@ function App() {
   };
   return (
     <main>
-      <section>
-        <h1>Code Documentation</h1>
-        <p> We help developer to doc your code</p>
-      </section>
-      <section>
-        <h2>Code Documentation</h2>
-        <div>
-          <textarea
-            value={inputValue}
-            onChange={handleTaskChange}
-            placeholder="Enter a new task"
-          />
-          <button onClick={handleAddTask}>Add Task</button>
+      <section className="app">
+        <div className="code-section">
+          <h1>Code Documentation</h1>
+          <p> We assist developer for automating code documentation</p>
+          <div className="code-section-input">
+            <textarea
+              value={inputValue}
+              onChange={handleTaskChange}
+              placeholder="Enter a new task"
+            />
+            <button onClick={handleAddTask}>Add Task</button>
+          </div>
         </div>
       </section>
     </main>
